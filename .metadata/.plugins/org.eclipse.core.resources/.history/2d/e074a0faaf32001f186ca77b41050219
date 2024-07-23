@@ -1,0 +1,33 @@
+package fundamentos;
+
+import java.util.Scanner;
+
+public class DesafioConversao {
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+		System.out.println("Digite seu primeiro salario: ");
+		String valor1 = entrada.nextLine();
+		int posicao1 = valor1.indexOf(".");
+		if (posicao1 != -1) {
+			valor1 = valor1.replace(",", ".");
+		}
+		System.out.println("Digite seu segundo salario: ");
+		String valor2 = entrada.nextLine();
+		int posicao2 = valor2.indexOf(".");
+		if (posicao2 != -1) {
+			valor2 = valor2.replace(",", ".");
+		}
+		System.out.println("Digite seu terceiro salario: ");
+		String valor3 = entrada.nextLine();
+		int posicao3 = valor3.indexOf(".");
+		if (posicao3 != -1) {
+			valor3 = valor3.replace(",", ".");
+		}
+		
+		Float salario1 = (float) Float.parseFloat(valor1);
+		Float salario2 = (float) Float.parseFloat(valor2);
+		Float salario3 = (float) Float.parseFloat(valor3);
+		double media = (salario1 + salario2 + salario3) / 3;
+		System.out.printf("A media dos tres salarios, respectivos: %.2f, %.2f, %.2f.\n eh igual a %.2f", salario1, salario2, salario3, media);
+	}
+}

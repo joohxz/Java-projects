@@ -1,0 +1,18 @@
+package fundamentos;
+
+public class ConversaoPrimitivo {
+	public static void main(String[] args) {
+		double a = 1;
+		System.out.println(a);
+		
+		float b = (float) 13.0;
+		float ab = 13.0F;
+		System.out.println(b + " " + ab);
+		System.out.printf("%f e %.0f", b, ab);
+		
+		int fo = 12;
+		int fa = fo;
+		System.out.println(fo);
+		System.out.println(fa);
+	}
+}

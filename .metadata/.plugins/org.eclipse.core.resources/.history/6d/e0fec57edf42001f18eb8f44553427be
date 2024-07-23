@@ -1,0 +1,20 @@
+package classe;
+
+public class DataTeste {
+	public static void main(String[] args) {
+		Data hoje = new Data();
+		hoje.Dia = 15;
+		hoje.Mes = "Julho";
+		hoje.Ano = 2024;
+		
+		System.out.printf("A data de hoje é: %d / %s / %d\n\n", hoje.Dia, hoje.Mes, hoje.Ano);
+		
+		var hoje2 = new Data();
+		hoje2.Dia = 15;
+		hoje2.Mes = "Julho";
+		hoje.Ano = 2024;
+		
+		System.out.println("A data de hoje através VAR é: %d / %s / %d", hoje2.Dia, hoje2.Mes, hoje2.Ano);
+		
+	}
+}
